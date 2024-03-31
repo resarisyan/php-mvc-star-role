@@ -16,8 +16,7 @@ class HomeController extends Controller
     public function index()
     {
         $data['products'] = $this->modelProduct->getAll();
-        var_dump($data['products']);
-        // $this->view('home', $data);
+        $this->view('home/index', $data);
     }
 
     public function test()

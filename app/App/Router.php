@@ -27,7 +27,6 @@ class Router
         $path = '/';
         if (isset($_SERVER['PATH_INFO'])) {
             $path = $_SERVER['PATH_INFO'];
-            //abc
         }
 
         $method = $_SERVER['REQUEST_METHOD'];
